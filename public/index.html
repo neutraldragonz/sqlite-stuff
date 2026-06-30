@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>aaaa</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <h1>SQLite testing</h1>
+
+  <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="location">location:</label>
+      <input type="text" id="location" name="location" required>
+      
+      <button type="submit" 
+        onclick="addData(document.getElementById('firstName').value, document.getElementById('lastName').value, document.getElementById('location').value)">
+        Add Data
+      </button>
+  </form>
+
+  <button onclick="loadData()">Load Data</button>
+
+  <p id="output"></p>
+</body>
+</html>
